@@ -60,9 +60,9 @@ const BrowserExtension = () => {
                             <p className='text-base text-Neutral-600 dark:text-Neutral-0 '>{extension.description}</p>
                         </div>
                     </div >
-                            <button className='mt-12 px-6 py-2 rounded-full text-Neutral-800 border border-Neutral-100 bg-Neutral-0  text-md dark:bg-Neutral-700 dark:text-Neutral-0 dark:border-Neutral-600' onClick={()=>handleRemove(extension.id)}>Remove</button >
+                            <button className='mt-12 px-6 py-2 rounded-full text-Neutral-800 border border-Neutral-100 bg-Neutral-0  text-md dark:bg-Neutral-700 dark:text-Neutral-0 dark:border-Neutral-600 hover:bg-Red-500 hover:text-white hover:cursor-pointer' onClick={()=>handleRemove(extension.id)}>Remove</button >
                             <button onClick={()=>handleToggle(extension.id)}>
-                                {toggle[extension.id] ? <FaToggleOn  className='text-4xl absolute right-[30px] bottom-[17px] text-Red-500 dark:text-Red-400' /> : <FaToggleOff   className='text-4xl absolute right-[30px] bottom-[17px] text-Neutral-300 dark:text-Neutral-600'/>}  
+                                {toggle[extension.id] ? <FaToggleOn  className='text-4xl absolute right-[30px] bottom-[17px] text-Red-500 dark:text-Red-400 hover:cursor-pointer' /> : <FaToggleOff   className='text-4xl absolute right-[30px] bottom-[17px] text-Neutral-300 dark:text-Neutral-600 hover:cursor-pointer'/>}  
                             </button>
                             
 
